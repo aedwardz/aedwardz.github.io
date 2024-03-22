@@ -14,4 +14,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<script>alert("Sorry, there was an error sending your message. Please try again later.");</script>';
     }
 }
-?>
+?> 
