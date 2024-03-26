@@ -117,20 +117,59 @@
 								<h2 class="major">Projects</h2>
 								<span class="image main"><img src="images/Search results.png" alt="" /></span>
 								<h2><b>Fullstack Search Engine utilizing Flask Framework</b></h2>
-								<p>As a key contributor to the development of a sophisticated Fullstack search engine, I collaborated with a team
-									member to create a robust and efficient search tool. The project involved crafting a seamless integration of Python for
-									backend functionality and HTML/CSS for the frontend interface. Leveraging the Flask framework, we successfully
-									established a robust connection between both ends, ensuring a smooth user experience.</p>
+								<h3><a href="https://github.com/aedwardz/Search-Engine" target="_blank"><span class="label">->GitHub Repository<-</span></a></h3>
+								
+								
+								<p>Built a Fullstack search engine using Python for the backend and HTML/CSS for the frontend interface.
+									 It utilizes the Flask framework to establish communication between the backend and frontend, ensuring a seamless user 
+									 experience. The backend functionality involves indexing documents stored in a zip file, extracting text content, and
+									  calculating TF-IDF (Term Frequency-Inverse Document Frequency) scores for each term. The engine merges partial indexes 
+									  to accelerate search speed, achieving results in under 300 milliseconds. The ranking algorithm considers factors like page 
+									  hits, TF-IDF scores, and the importance of text tags such as headers and bold tags to determine the relevance of documents. 
+									  The frontend interface follows a minimalist design approach, prioritizing performance and result presentation. Overall, the 
+									  project aims to deliver a robust and efficient search tool for users. </p>
+								
 								<span class="image main"><img src="images/sql.png" alt="" /></span>
-								<h2><b>Comprehensive Airport Database</b></h2>
-								<p>Developed a comprehensive airport database featuring a curated selection of 100 global airports. Leveraged
-									SQLite to proficiently organize and manage the data, ensuring seamless integration and efficient retrieval. Accessible
-									through an intuitive Graphical User Interface (GUI) crafted using Python’s tkinter library.</p>
+								<h2><b>Airport Statistics Database</b></h2>
+								<p>The Python Airport Statistics Database is a user-friendly application designed to provide comprehensive airport statistics for
+									 any registered country. Leveraging a SQLite database backend, the program offers a vast repository of airport data. With a sleek 
+									 and intuitive Tkinter graphical user interface (GUI), users can effortlessly navigate through the database and access a wide array 
+									 of airport statistics. From the total number of airports to specifics such as the busiest airport in terms of passenger traffic or
+									  cargo handling capacity, the application caters to diverse informational needs. Users can select their desired country from a dropdown
+									   menu and instantly retrieve relevant airport statistics. Whether for travel planning, research, or curiosity, the Python Airport 
+									   Statistics Database offers a convenient and efficient means to explore airport data with just a few clicks.</p>
+
+								<span class="image main"><img src="images/DMA.png" alt="" /></span>
+								<h2><b>Explicit Dynamic Memory Allocator</b></h2>
+								<h3><a href="https://github.com/aedwardz/Dynamic-Memory-Allocator" target="_blank"><span class="label">->GitHub Repository<-</span></a></h3>
+								<p>This dynamic memory allocator implements a custom memory allocation library with functions adjacent to malloc and free. The allocation 
+									function allocates uninitialized memory from the heap by inrementing the brk pointer. It ensures that the allocated
+									memory is 16-byte aligned and returns a pointer to the allocated memory region. If the requested size is 0, it 
+									returns NULL and sets errno to ENOMEM. The memory deallocation function marks a dynamically allocated block as no longer in 
+									use, coalesces adjacent free blocks if necessary, and adds the block to the appropriate bucket according to the
+									block placement policy. It checks the validity of the pointer being freed and sets errno accordingly in case of
+									errors such as invalid pointers or mismatched block sizes. Additionally, it ensures that the allocated bit is 
+									properly set in the header and footer of the block. The code also includes helper functions for managing buckets,
+									inserting and removing blocks, and handling memory coalescing.</p>
+
 								<span class="image main"><img src="images/battleships mips.png" alt="" /></span>
 								<h2><b>Battleships in MIPS</b></h2>
+								<h3><a href="https://github.com/aedwardz/Battleships-in-MIPS" target="_blank"><span class="label">->GitHub Repository<-</span></a></h3>
 								<p>Designed and implemented a Battleships game using the MIPS assembly language, featuring an intricate GUI.
 									This project showcases my proficiency in low-level programming and assembly language, demonstrating the ability to
 									create a visually compelling gaming experience in a challenging environment.</p>
+								
+								<span class="image main"><img src="images/integrated-terminal.webp" alt="" /></span>
+								<h2><b>Shell Interpreter in C</b></h2>
+								<h3><a href="https://github.com/aedwardz/Simple-Shell-in-C" target="_blank"><span class="label">->GitHub Repository<-</span></a></h3>
+								<p>The provided code is a C program that serves as a shell interpreter, allowing users to execute commands. It utilizes
+								various signal handlers to handle events such as child process termination (`sigchld_handler`) and user-defined 
+								signals (`sigusr2_handler`). The program begins by initializing variables and setting up handlers for signals. It then enters a 
+								loop where it continuously prompts the user for input using the `readline` function. Within this loop, the program checks for various 
+								conditions such as background process termination (`sigchldFlag`), history commands, built-in commands like `cd` and `exit`, and
+								multiple processes execution. For each command entered by the user, the program parses it, executes it, and waits for completion
+								if it's a foreground job. Additionally, it maintains a history of commands entered by the user and handles input/output redirection 
+								and pipingfor processes. The program provides error handling for various scenarios and ensures proper memory management throughout its execution.</p>
 							</article>
 
 						<!-- About -->
@@ -155,7 +194,7 @@
 								
 								<ul class="icons">
 									<li>My Github</li>
-									<li><a href="https://github.com/aedwardz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/aedwardz" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
